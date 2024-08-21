@@ -3,6 +3,7 @@
 <head>
     <title>Parallax India</title>
     <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -114,38 +115,64 @@
         </div>
 
         <div class="container2">
-            <div class="steps">
+            <div class="steps-container">
                 <div class="step">
-                    <img src="assets/p.png" alt="Research">
-                    <h2>Research & Strategy</h2>
-                    <p>We delve deep into understanding our clients' needs and gather crucial insights. These form the foundation for developing effective strategies tailored to our digital solutions.</p>
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Research & strategy</h3>
+                        <p>We delve deep into understanding our clients' <br> needs and gather crucial insights.These form the <br> foundation for developing effective strategies <br> tailored to our digital solutions.</p>
+                    </div>
                 </div>
-                <div class="step">
-                    <img src="assets/p.png" alt="Concept">
-                    <h2>Design and Development</h2>
-                    <p>Our creative and technical teams collaborate to transform insights into innovative designs and robust development solutions, ensuring seamless user experiences.</p>
+                <div class="step-image">
+                <img src="assets/p.png" alt="Research & strategy">
                 </div>
-                <div class="step">
-                    <img src="assets/p.png" alt="Design">
-                    <h2>Implementation & Testing</h2>
-                    <p>We meticulously implement and rigorously test our solutions to ensure they meet the highest standards of quality and functionality.
-                    </p>
-                </div>
-            </div>
-         </div>
 
-         <div class="container2">
-            <div class="steps">
                 <div class="step">
-                    <img src="assets/p.png" alt="Development">
-                    <h2>Launch & Optimization</h2>
-                    <p>We launch our digital solutions with precision and continuously monitor and optimise them to ensure peak performance and user satisfaction.</p>
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Design & Development</h3>
+                        <p>Our creative and technical teams collaborate <br> to transform insights into innovative designs <br> and robust development solutions, ensuring <br> seamless user experiences.</p>
+                    </div>
                 </div>
+                <div class="step-image">
+                    <img src="assets/p.png" alt="Research & strategy">
+                    </div>
+
                 <div class="step">
-                    <img src="assets/p.png" alt="Launch">
-                    <h2>Support & Growth</h2>
-                    <p>Our commitment doesn't end at launch. We provide ongoing support and work with our clients to drive growth and adapt to evolving digital landscapes.</p>
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Implementation & Testing</h3>
+                        <p> We meticulously implement and rigorously test our solutions <br> to ensure they meet the highest standards <br> of quality and functionality.</p>
+                    </div>
                 </div>
+                <div class="step-image">
+                    <img src="assets/p.png" alt="Research & strategy">
+                    </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Launch & Optimization</h3>
+                        <p>We launch our digital solutions with precision and <br> continuously monitor and optimise them to <br> ensure peak performance and user satisfaction.</p>
+                    </div>
+                </div>
+
+                <div class="step-image">
+                    <img src="assets/p.png" alt="Research & strategy">
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Support & Growth</h3>
+                        <p>Our commitment doesn't end at launch.<br>We provide ongoing support and work with our clients<br> to drive growth and adapt to evolving digital landscapes. </p>
+                    </div>
+                </div>
+
+                <div class="step-image">
+                    <img src="assets/p.png" alt="Research & strategy">
+                </div>
+
             </div>
         </div>
 
@@ -160,8 +187,69 @@
                     Today, we are proud to operate one of the most comprehensive digital solution consortiums, trusted by numerous clients globally. We have expanded our reach from local to international, continually striving to provide exceptional digital services to businesses worldwide.
                 </div>
             </div>
-            </div>
+         </div>
 
+
+        <div class="container2" id="careers">
+                <div class="career-section">
+                    <h1>Careers</h1>
+                    <h2>Join us</h2>
+                    <div class="categories">
+                        <button class="category-btn active" id="all-btn" onclick="showCategory('all', this)">All Categories</button>
+                        <button class="category-btn" id="it-btn" onclick="showCategory('it', this)">IT</button>
+                        <button class="category-btn" id="support-btn" onclick="showCategory('support', this)">Support</button>
+                        <button class="category-btn" id="design-btn" onclick="showCategory('design', this)">Design</button>
+                    </div>
+                    
+                    
+                    <div class="cards-container">
+                        <!-- All Categories -->
+                        <div class="category-content all" id="all">
+                            <div class="card">
+                                <img src="assets/p.png" alt="Node.js Developer">
+                                <h3>Senior Node.js Developer</h3>
+                                <p>Responsible for developing server-side logic.</p>
+                            </div>
+                            <div class="card">
+                                <img src="assets/p.png" alt="Customer Service Specialist">
+                                <h3>Customer Service Specialist (Portuguese)</h3>
+                                <p>Provide support to customers in Portuguese.</p>
+                            </div>
+                            <div class="card">
+                                <img src="assets/p.png" alt="UI/UX Designer">
+                                <h3>UI/UX Designer</h3>
+                                <p>Design intuitive user interfaces for web apps.</p>
+                            </div>
+                        </div>   
+                        <!-- IT Category -->
+                        <div class="category-content it" id="it" style="display:none;">
+                            <div class="card">
+                                <img src="assets/p.png" alt="Node.js Developer">
+                                <h3>Senior Node.js Developer</h3>
+                                <p>Responsible for developing server-side logic.</p>
+                            </div>
+                        </div>
+                    
+                        <!-- Support Category -->
+                        <div class="category-content support" id="support" style="display:none;">
+                            <div class="card">
+                                <img src="assets/p.png" alt="Customer Service Specialist">
+                                <h3>Customer Service Specialist (Portuguese)</h3>
+                                <p>Provide support to customers in Portuguese.</p>
+                            </div>
+                        </div>
+                    
+                        <!-- Design Category -->
+                        <div class="category-content design" id="design" style="display:none;">
+                            <div class="card">
+                                <img src="assets/p.png" alt="UI/UX Designer">
+                                <h3>UI/UX Designer</h3>
+                                <p>Design intuitive user interfaces for web apps.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>             
     </main>
 </body>
 </html> 

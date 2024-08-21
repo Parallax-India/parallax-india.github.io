@@ -236,55 +236,66 @@ header:hover::before {
     color: #ffffff;
 }
 
-.step:hover {
-    transform: scale(1.05);
-}
-
-h1 {
-    font-size: 3rem;
-    margin-bottom: 30px;
-}
-
-.steps {
+.steps-container {
     display: flex;
-    justify-content: center;
-    align-items:center;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+    scrollbar-width: none; 
+    gap: 70px;
+    padding: 10px 0;
 }
 
 .step {
-    width: 300px; 
-    margin: 20px;
-    box-sizing: border-box;
-    justify-content: center;
-    border: 3px solid transparent; 
-    border-radius: 30px;
-    padding: 20px;
-    transition: border-color 0.5s ease; 
-    margin-left: 50px;
-}
-
-.step:hover {
-    border-color: #0054a4; 
-}
-
-
-.step img {
-    width: 100px;
-    height: auto;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    text-align: left;
+    flex-shrink: 0; /* Prevents the step from shrinking */
     margin-bottom: 20px;
+    padding-left: 100px;
+    flex-direction: column;
 }
 
-.step h2 {
+.step-number {
+    font-size: 2rem;
+    background-color: #00bcf2;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin-bottom: 20px; /* Space between number and content */
+    font-family: "Jost", sans-serif;
+    text-align: center;
+}
+
+.step-content {
+    flex-grow: 1;
+}
+
+.step h3 {
     font-size: 1.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    font-family: "Jost", sans-serif;
+    color: #3b3b3b;
 }
 
 .step p {
     font-size: 1rem;
-    line-height: 1.6;
+    margin-bottom: 10px;
+    font-family: "Jost", sans-serif;
+    color: #666;
 }
+
+.step-image img {
+    max-width: 100px;
+    height: auto;
+    margin-left: 20px;
+    flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
 
 .history {
     text-align: center;
@@ -313,4 +324,93 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+    scrollbar-width: none; 
+    gap: 70px;
+    padding: 20px;
+}
+
+.category-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+    scrollbar-width: none; 
+    gap: 70px;
+    padding: 10px 0;
+}
+
+.card {
+    background-color: #00000000;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    width: 220px;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    flex-shrink: 0;
+    border: 3px solid transparent; 
+    transition: border-color 0.5s ease;
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+.card h3 {
+    margin: 10px 0;
+    flex-grow: 1;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #bbb;
+    margin: 0;
+    flex-grow: 1;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    border-color: #0054a4; 
+}
+
+.categories {
+    display: flex;
+    justify-content: start;
+    margin: 20px;
+}
+
+.category-btn {
+    background-color: #00000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.category-btn.active {
+    border-bottom: 2px solid #0054a4;
+}
+
+.career-section h1{
+    margin-left: 25px;
+}
+.career-section h2{
+    margin-left: 30px;
 }

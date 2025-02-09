@@ -1,0 +1,77 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html , body {
+      width: 100%;
+      height: 100%;
+  }
+  /* Root Variables */
+  :root {
+    --color: #ffffff;
+    --background-color: #ffffff;
+    --description-color: #666666;
+    --sub-head-color: #333333;
+    --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  
+  /* Basic Styles */
+  body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: black;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Buttons */
+  button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  
+  /* Utility Classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  

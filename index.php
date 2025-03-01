@@ -3,54 +3,13 @@
 
 <head>
   <title>Parallax India</title>
-  <?php include('partials/head.php') ; ?>
+  <?php include('partials/head.php'); ?>
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="#"><img src="assets/logo.png" alt="Parallax Logo" /></a>
 
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#about-our-history">About Us</a></li>
-          <li><a href="#workflow">Our Process</a></li>
-          <li><a href="#ourServices">Services</a></li>
-          <li><a href="#Projects">Projects</a></li>
-          <li><a href="#contact-us">Contact Us</a></li>
-        </ul>
-      </nav>
-      <button class="contact-button">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-envelope"
-          viewBox="0 0 16 16">
-          <path
-            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383L8.482 9.25a.5.5 0 0 1-.964 0L1 5.383V12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5.383z" />
-        </svg>
-        Make Payment
-      </button>
-      <div id="menuIcon">
-        <i class="ri-menu-2-line ri-lg"></i>
-        <i class="ri-close-line ri-3xl"></i>
-      </div>
+  <?php include('partials/nav.php'); ?>
 
-    </div>
-  </header>
-  <div id="navMenu">
-    <ul>
-      <li><a class="menuItem" href="#about-our-history">About Us</a></li>
-      <li><a class="menuItem" href="#workflow">Our Process</a></li>
-      <li><a class="menuItem" href="#ourServices">Services</a></li>
-      <li><a class="menuItem" href="#Projects">Projects</a></li>
-      <li><a class="menuItem" href="#contact-us">Contact Us</a></li>
-    </ul>
-  </div>
   <main id="mainContainer">
     <div class="container2" id="hero">
       <div class="content">
@@ -109,42 +68,42 @@
         </button>
       </div>
       <div class="workflow-grid">
-        <div class="grid-item">
-          <img src="assets/p.png" alt="Development" />
-          <a href="./services.php">
+        <a href="./services.php" onclick="event.preventDefault(); navigateToService('web-development')">
+          <div class="grid-item">
+            <img src="assets/p.png" alt="Development" />
             <p>Web Development</p>
-          </a>
-        </div>
-        <div class="grid-item">
-          <img src="assets/p.png" alt="Design" />
-          <a href="./services.php">
+          </div>
+        </a>
+        <a href="./services.php" onclick="event.preventDefault(); navigateToService('zoho')">
+          <div class="grid-item">
+            <img src="assets/p.png" alt="Design" />
             <p>Zoho Development</p>
-          </a>
-        </div>
-        <div class="grid-item">
-          <img src="assets/p.png" alt="DevOps" />
-          <a href="./services.php">
+          </div>
+        </a>
+        <a href="./services.php" onclick="event.preventDefault(); navigateToService('performance-marketing')">
+          <div class="grid-item">
+            <img src="assets/p.png" alt="Marketing" />
             <p>Performance Marketing</p>
-          </a>
-        </div>
-        <div class="grid-item">
-          <img src="assets/p.png" alt="Blockchain" />
-          <a href="./services.php">
+          </div>
+        </a>
+        <a href="./services.php" onclick="event.preventDefault(); navigateToService('graphic-design')">
+          <div class="grid-item">
+            <img src="assets/p.png" alt="Design" />
             <p>Graphic Design</p>
-          </a>
-        </div>
-        <div class="grid-item">
-          <img src="assets/p.png" alt="NFT Markets" />
-          <a href="./services.php">
+          </div>
+        </a>
+        <a href="./services.php" onclick="event.preventDefault(); navigateToService('video-editing')">
+          <div class="grid-item">
+            <img src="assets/p.png" alt="Video" />
             <p>Video Editing & Cinematography</p>
-          </a>
-        </div>
-        <div class="grid-item">
-          <img src="assets/p.png" alt="Marketing" />
-          <a href="./services.php">
+          </div>
+        </a>
+        <a href="./services.php" onclick="event.preventDefault(); navigateToService('3d-modeling')">
+          <div class="grid-item">
+            <img src="assets/p.png" alt="3D" />
             <p>3d Modelling</p>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     </div>
 
@@ -409,10 +368,8 @@
       </div>
     </div>
   </main>
-  <?php include('partials/footer.php') ; ?>
-  <?php include('partials/scripts.php') ; ?>
-
- 
+  <?php include('partials/footer.php'); ?>
+  <?php include('partials/scripts.php'); ?>
 </body>
 
 </html>

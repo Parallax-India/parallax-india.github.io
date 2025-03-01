@@ -23,7 +23,10 @@
     --button-primary-color: #00bcf2;
     --box-shadow: 4px 4px 12px #111111, -4px -4px 12px #171717;
   }
-  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   body {
     font-family: var(--font-family);
     font-weight: 400;
@@ -835,6 +838,7 @@
     line-height: 1rem;
     margin: 1rem 0;
   }
+  
   /* media quieres max 440 px  */
   @media (max-width: 440px) {
     header nav {
